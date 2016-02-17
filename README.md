@@ -56,6 +56,18 @@ $ npm run build
 
 ```
 
+## Distribute example
+
+```bash
+$ npm run dist
+
+> typescript-library-boilerplate@1.2.0 dist C:\Users\wadahiro\src\github.com\wadahiro\typescript-library-boilerplate
+> browserify lib --debug | exorcist dist/bundle.js.map > dist/bundle.js && uglifyjs dist/bundle.js --in-source-map dist/bundle.js.
+map --mangle --compress --output dist/bundle.min.js --source-map dist/bundle.min.js.map
+
+
+```
+
 
 ## License
 
