@@ -1,6 +1,6 @@
 {
   "name": "typescript-library-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A TypeScript Boilerplate for Libraries",
   "main": "index.ts",
   "scripts": {
