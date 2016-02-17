@@ -2,11 +2,12 @@
   "name": "typescript-library-boilerplate",
   "version": "1.1.0",
   "description": "A TypeScript Boilerplate for Libraries",
-  "main": "index.ts",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers ts:node_modules/espower-typescript/guess test/**/*.ts",
     "watch": "mocha -w --compilers ts:node_modules/espower-typescript/guess test/**/*.ts",
     "build": "tsc",
+    "dist": "browserify lib --debug | exorcist dist/bundle.js.map > dist/bundle.js && uglifyjs dist/bundle.js --in-source-map dist/bundle.js.map --mangle --compress --output dist/bundle.min.js --source-map dist/bundle.min.js.map",
     "postinstall": "typings install"
   },
   "repository": {
@@ -20,9 +21,13 @@
   },
   "homepage": "https://github.com/wadahiro/typescript-library-boilerplate#readme",
   "devDependencies": {
+    "browserify": "^13.0.0",
     "espower-typescript": "^4.0.1",
+    "exorcist": "^0.4.0",
     "mocha": "^2.4.5",
     "power-assert": "^1.2.0",
-    "typescript": "^1.7.5"
-  }
+    "typescript": "^1.7.5",
+    "uglifyjs": "^2.4.10"
+  },
+  "typings": "lib/index.d.ts"
 }

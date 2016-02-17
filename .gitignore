@@ -1,6 +1,8 @@
 node_modules
 typings
 build
+lib
+dist
 *.js
 *.js.map
 *.log
