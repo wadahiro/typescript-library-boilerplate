@@ -10,12 +10,12 @@ npm install -g typings
 npm install
 ```
 
-## Run test
+## Run test example
 
 ```bash
 $ npm run test
 
-> typescript-library-boilerplate@1.0.0 test c:\Users\wadahiro\src\github.com\wadahiro\typescript-library-boilerplate
+> typescript-library-boilerplate@1.20 test c:\Users\wadahiro\src\github.com\wadahiro\typescript-library-boilerplate
 > mocha --compilers ts:node_modules/espower-typescript/guess test/**/*.ts
 
 
@@ -44,3 +44,21 @@ $ npm run test
       +2
 ...
 ```
+
+## Build example
+
+```bash
+$ npm run build
+
+> typescript-library-boilerplate@1.2.0 build c:\Users\wadahiro\src\github.com\wadahiro\typescript-library-boilerplate
+> tsc
+
+
+```
+
+
+## License
+
+Licensed under the [MIT](/LICENSE.txt) license.
+
+

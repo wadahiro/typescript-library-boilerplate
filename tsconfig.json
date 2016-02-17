@@ -5,12 +5,14 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "rootDir": "src",
+        "outDir": "lib",
         "sourceMap": true
     },
     "exclude": [
         "typings/browser.d.ts",
         "typings/browser",
         "build",
-        "node_modules"
+        "node_modules",
+        "test"
     ]
 }
