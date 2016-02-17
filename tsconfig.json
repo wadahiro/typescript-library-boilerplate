@@ -1,13 +1,16 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "rootDir": "src",
-    "sourceMap": true
-  },
-  "exclude": [
-    "build", "node_modules"
-  ]
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "rootDir": "src",
+        "sourceMap": true
+    },
+    "exclude": [
+        "typings/browser.d.ts",
+        "typings/browser",
+        "build",
+        "node_modules"
+    ]
 }
